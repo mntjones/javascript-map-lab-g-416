@@ -23,7 +23,7 @@ const zebraStripes = [
 ];
 
 const sortedRobots = robots.map(function(robot) {
-  return Object.assign({}, robot
+  return Object.assign({}, robot, 
    
   }))
 })
