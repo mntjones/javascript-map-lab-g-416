@@ -35,9 +35,15 @@ const sortedRobots = robots.map(function (robot) {
   }
 });
 
-const coloredZebraStripes = zebraStripes.map(function (stripe) {
+const coloredZebraStripes = zebraStripes.map(function (stripe, index) {
+  if (index === 0 || index % 2 === 0) {
+    return Object.assign({}, stripe, { color: 'black'});
+  }
   
-})
+  else {
+    return Object.assign({}, stripe, { color: 'white'});
+  }
+});
 
 
 
