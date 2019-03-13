@@ -22,8 +22,8 @@ const zebraStripes = [
   { width: 7.31, color: null }
 ];
 
-const transformedAutobotsWithMap = autobots.map(function (autobot) {
-  return Object.assign({}, autobot, {
+const sortedRobots = robots.map(function (robot) {
+  return Object.assign({}, robot, {
     strength: autobot.strength * 2,
     isTransformed: true,
   });
